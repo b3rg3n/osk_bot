@@ -18,6 +18,7 @@ SOUNDS = {
     "ВЕЛИКОЛЕПНЫЙ ПЛАН ВОЛТЕР": "AwACAgIAAxkDAAOuaF24BbO2a-5wemIjuCEHcxirPh0AApNxAAL6_PFKQf6bHo0Zr8g2BA",
     "ВЕСЬ ПОЛ ЗАСРАЛ": "AwACAgIAAxkDAAOvaF24CqGpGBIO6-X29LdAOSmVL58AAuWIAAIY3PBKOIcZkNbHAoc2BA",
     "ВОЗНИКЛИ ВОПРОСЫ": "AwACAgIAAxkDAAOwaF24DxsMXX2R6gXiZNp89bZA3F8AApZxAAL6_PFKb-lvGOTWRW42BA",
+    "ВОТ ХЕРНЯ ПРИДУРОК": "AwACAgIAAxkDAAIBRGheUF28t5-evSooKESinh78gKEwAAKsdQAC-vzxShtpkX6ar9uKNgQ",
     "ВСЁ ЕСТЬ": "AwACAgIAAxkDAAOxaF24FBWDH7PU4UI_a_nYVDPOAaYAAphxAAL6_PFKOWqAx-x8N7Y2BA",
     "ВСЁ ПО ЧЕСНОКУ": "AwACAgIAAxkDAAOyaF24GgHbNyDwfQM5PV4Rg6uwR5QAAppxAAL6_PFKIIlldTRifiA2BA",
     "ВСЁ ПРОСТО": "AwACAgIAAxkDAAOzaF24H09-bXuEV3HB6bs1d1KsfBAAAptxAAL6_PFK9CSmG8xfvj42BA",
