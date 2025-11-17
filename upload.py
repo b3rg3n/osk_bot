@@ -1,6 +1,5 @@
 import os
 import asyncio
-import json
 import importlib.util
 
 from aiogram import Bot
@@ -39,7 +38,7 @@ async def main():
             voice = FSInputFile(filepath)
 
             try:
-                msg = await bot.send_voice(chat_id=CHAT_ID, voice=voice)
+                msg = await bot.send_voice(chat_id=CHAT_ID, voice=voice, caption=title)
                 file_id = msg.voice.file_id
                 sounds_dict[title] = file_id
                 print(f"[OK] {title} -> {file_id}")
