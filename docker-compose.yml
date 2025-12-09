@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: oski-na-pythone
+    restart: always  # Автоматически перезапускать, если упадет
+    volumes:
+      - ./zvuchok:/app/zvuchok  # Проброс папки
+      - ./oski.py:/app/oski.py  # Проброс файла

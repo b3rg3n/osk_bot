@@ -6,8 +6,6 @@ import random
 import time
 import threading
 import importlib.util
-# import json # json не используется в финальном коде, можно убрать
-# import logging # Уже импортирован выше, дублирование
 
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
@@ -19,9 +17,10 @@ from watchdog.events import FileSystemEventHandler
 load_dotenv()
 
 API_TOKEN = os.getenv('BOT_KEY')
-CHAT_ID = int(os.getenv('CHAT_ID'))  # обязательно int
+CHAT_ID = int(os.getenv('CHAT_ID'))
+CHAT_ID_KENTIK = int(os.getenv('CHAT_ID_KENTIK'))
 
-FOLDER = "zvuchok" # Убедитесь, что эта папка существует в корне проекта
+FOLDER = "zvuchok"
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s') # Улучшенный формат логов
 
@@ -80,7 +79,7 @@ async def inline_echo(inline_query: types.InlineQuery):
 
 
 # ===== Обработка .ogg от владельца =====
-@dp.message(F.from_user.id == CHAT_ID)
+@dp.message(F.from_user.id == CHAT_ID or F.from_user.id == CHAT_ID_KENTIK)
 async def handle_ogg_upload(message: types.Message):
     logging.info(f"Получено сообщение от CHAT_ID ({message.from_user.id}) для загрузки.")
     # Для отладки можно временно раскомментировать
